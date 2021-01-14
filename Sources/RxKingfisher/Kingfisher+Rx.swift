@@ -41,7 +41,7 @@ extension KingfisherWrapper {
                         case .success(let value):
                             single(.success(value.image))
                         case .failure(let error):
-                            single(.failure(error))
+                            single(.error(error))
                         }
                     }
                 )
